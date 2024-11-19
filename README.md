@@ -33,3 +33,13 @@ We will, however, cover the following topics which we recommend you take a look 
 Before we get into the actual hacking part, it's good to have a look around. In Burp, set the Intercept mode to off and then browse around the site. This allows Burp to log different requests from the server that may be helpful later.
 
 This is called walking through the application, which is also a form of reconnaissance!
+
+Question #1: What's the Administrator's email address?
+
+![This is the shop](/owaspadventure.png)
+
+The reviews show each user's email address. Which, by clicking on the Apple Juice product, shows us the Admin email!
+
+![admin email](/owaspadmin.png)
+
+    admin@juice-sh.op
