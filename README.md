@@ -107,3 +107,6 @@ __Why does this work?__
 The character **'** will close the brackets in the SQL query
 **OR** in a SQL statement will return true if either side of it is true. As **1=1** is always true, the whole statement is true. Thus it will tell the server that the email is valid, and log us into user id 0, which happens to be the administrator account.
 The **--** character is used in SQL to comment out data, any restrictions on the login will no longer work as they are interpreted as a comment. This is like the # and // comment in python and javascript respectively.
+
+![Admin Login bypass](/admin_shop.png)
+
