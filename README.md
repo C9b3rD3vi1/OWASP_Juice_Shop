@@ -107,7 +107,7 @@ __Why does this work?__
 The character **'** will close the brackets in the SQL query
 **OR** in a SQL statement will return true if either side of it is true. As **1=1** is always true, the whole statement is true. Thus it will tell the server that the email is valid, and log us into user id 0, which happens to be the administrator account.
 
-The **--** character is used in SQL to comment out data, any restrictions on the login will no longer work as they are interpreted as a comment. This is like the # and // comment in python and javascript respectively.
+The **'--** character is used in SQL to comment out data, any restrictions on the login will no longer work as they are interpreted as a comment. This is like the # and // comment in python and javascript respectively.
 
 ![Admin Login bypass](/admin_shop.png)
 
@@ -119,3 +119,13 @@ The **--** character is used in SQL to comment out data, any restrictions on the
 Similar to what we did in Question #1, we will now log into Bender's account! Capture the login request again, but this time we will put: **bender@juice-sh.op'--** as the email.
 
 ![bander account](/bander.png)
+
+Now, forward that to the server!
+
+But why don't we put the **1=1**?
+
+Well, as the email address is valid (which will return true), we do not need to force it to be true. Thus we are able to use **'--** to bypass the login system. Note the **1=1** can be used when the email or username is not known or invalid.
+
+![bander account](/bander_account.png)
+
+    fb364762a3c102b2db932069c0e6b78e738d4066
