@@ -84,4 +84,10 @@ Command Injection is when web applications take input or user-controlled data an
 
 **Email Injection**
 
-Email injection is a security vulnerability that allows malicious users to send email messages without prior authorization by the email server. These occur when the attacker adds extra data to fields, which are not interpreted by the server correctly. 
+Email injection is a security vulnerability that allows malicious users to send email messages without prior authorization by the email server. These occur when the attacker adds extra data to fields, which are not interpreted by the server correctly.
+
+**Question #1: Log into the administrator account!**
+
+After we navigate to the login page, enter some data into the email and password fields.
+
+![Log into the administrator account](/intercept.png)
