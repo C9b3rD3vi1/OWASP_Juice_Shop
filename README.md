@@ -66,3 +66,7 @@ If we google "replicator" we will get the results indicating that it is from a T
 ![Jim reference](/replicator1.png)
 
     Star Trek 
+
+## Inject the juice
+
+![login form](/login_form.png)
