@@ -111,3 +111,11 @@ The **--** character is used in SQL to comment out data, any restrictions on the
 
 ![Admin Login bypass](/admin_shop.png)
 
+
+    32a5e0f21372bcc1000a6088b93b458e41f0e02a
+
+**Question #2: Log into the Bender account!**
+
+Similar to what we did in Question #1, we will now log into Bender's account! Capture the login request again, but this time we will put: **bender@juice-sh.op'--** as the email.
+
+![bander account](/bander.png)
