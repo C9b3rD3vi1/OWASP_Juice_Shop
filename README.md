@@ -6,10 +6,10 @@ This room uses the Juice Shop vulnerable web application to learn how to identif
 
 ## Open for Business
 
-Within this room, we will look at OWASP's TOP 10 vulnerabilities in web applications. You will find these in all types of web applications. But for today we will be looking at OWASP's own creation, Juice Shop!
+Within this room, we will look at **OWASP's TOP 10 vulnerabilities** in web applications. You will find these in all types of web applications. But for today we will be looking at OWASP's own creation, Juice Shop!
 
 
-The FREE Burpsuite rooms 'Burpsuite Basics'  and 'Burpsuite Repeater'  are recommended before completing this room!
+The FREE Burpsuite rooms **Burpsuite Basics**  and **Burpsuite Repeater**  are recommended before completing this room!
 ~
 
 Juice Shop is a large application so we will not be covering every topic from the top 10.
@@ -34,7 +34,7 @@ Before we get into the actual hacking part, it's good to have a look around. In 
 
 This is called walking through the application, which is also a form of reconnaissance!
 
-Question #1: What's the Administrator's email address?
+**Question #1: What's the Administrator's email address?**
 
 ![This is the shop](/owaspadventure.png)
 
@@ -44,7 +44,7 @@ The reviews show each user's email address. Which, by clicking on the Apple Juic
 
     admin@juice-sh.op
 
-Question #2: What parameter is used for searching? 
+**Question #2: What parameter is used for searching?**
 
 Click on the magnifying glass in the top right of the application will pop out a search bar.
 
@@ -56,7 +56,7 @@ Now pay attention to the URL which will now update with the text we just entered
 
         q
 
-Question #3: What show does Jim reference in his review? 
+**Question #3: What show does Jim reference in his review?**
 
 Jim did a review on the Green Smoothie product. We can see that he mentions a replicator.
 
@@ -71,3 +71,14 @@ If we google "replicator" we will get the results indicating that it is from a T
 ## Inject the juice
 
 ![login form](/login_form.png)
+
+This task will be focusing on injection vulnerabilities. Injection vulnerabilities are quite dangerous to a company as they can potentially cause downtime and/or loss of data. Identifying injection points within a web application is usually quite simple, as most of them will return an error. There are many types of injection attacks, some of them are:
+
+**SQL Injection**
+SQL Injection is when an attacker enters a malicious or malformed query to either retrieve or tamper data from a database. And in some cases, log into accounts.
+
+**Command Injection**
+Command Injection is when web applications take input or user-controlled data and run them as system commands. An attacker may tamper with this data to execute their own system commands. This can be seen in applications that perform misconfigured ping tests.
+
+**Email Injection**
+Email injection is a security vulnerability that allows malicious users to send email messages without prior authorization by the email server. These occur when the attacker adds extra data to fields, which are not interpreted by the server correctly. 
