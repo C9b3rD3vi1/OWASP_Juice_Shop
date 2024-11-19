@@ -55,3 +55,8 @@ Now pay attention to the URL which will now update with the text we just entered
 ![search parameter](/q_parameter.png)
 
         q
+
+Question #3: What show does Jim reference in his review? 
+
+Jim did a review on the Green Smoothie product. We can see that he mentions a replicator. 
+![Jim reference](/replicator.png)
