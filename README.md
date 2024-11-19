@@ -60,3 +60,9 @@ Question #3: What show does Jim reference in his review?
 
 Jim did a review on the Green Smoothie product. We can see that he mentions a replicator. 
 ![Jim reference](/replicator.png)
+
+If we google "replicator" we will get the results indicating that it is from a TV show called Star Trek
+
+![Jim reference](/replicator1.png)
+
+    Star Trek 
