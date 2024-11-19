@@ -43,3 +43,15 @@ The reviews show each user's email address. Which, by clicking on the Apple Juic
 ![admin email](/owaspadmin.png)
 
     admin@juice-sh.op
+
+Question #2: What parameter is used for searching? 
+
+Click on the magnifying glass in the top right of the application will pop out a search bar.
+
+We can then input some text and by pressing Enter will search for the text which was just inputted.
+
+Now pay attention to the URL which will now update with the text we just entered.
+
+![search parameter](/q_parameter.png)
+
+        q
