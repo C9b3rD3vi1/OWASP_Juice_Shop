@@ -99,3 +99,5 @@ This will allow us to see the data been sent to the server!
 ![password input intercept](/intercept1.png)
 
 We will now change the "a" next to the email to: **' or 1=1--** and forward it to the server.
+
+![sql injection success](/intercept_injection.png)
