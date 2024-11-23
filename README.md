@@ -130,9 +130,11 @@ Well, as the email address is valid (which will return true), we do not need to 
 
     fb364762a3c102b2db932069c0e6b78e738d4066
 
-## Who broke my lock?!
+## Who broke my lock?
 
-In this task, we will look at exploiting authentication through different flaws. When talking about flaws within authentication, we include mechanisms that are vulnerable to manipulation. These mechanisms, listed below, are what we will be exploiting. 
+![Weak password authentication](/reset.png)
+
+In this task, we will look at exploiting authentication through different flaws. When talking about flaws within authentication, we include mechanisms that are vulnerable to manipulation. These mechanisms, listed below, are what we will be exploiting.
 
 Weak passwords in high privileged accounts
 
