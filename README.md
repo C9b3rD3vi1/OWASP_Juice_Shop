@@ -157,3 +157,20 @@ Whereas a successful request will return a 200 OK
 Once completed, login to the account with the password.
 
     c2110d06dc6f81c67cd8099ff0ba601241f1ac0e
+
+***Question #2: Reset Jim's password!***
+
+Believe it or not, the reset password mechanism can also be exploited! When inputted into the email field in the Forgot Password page, Jim's security question is set to "Your eldest siblings middle name?".
+
+In Task 2, we found that Jim might have something to do with Star Trek. Googling "Jim Star Trek" gives us a wiki page for Jame T. Kirk from Star Trek.
+![Jimmy Googling "Star](/jim.png)
+
+Looking through the wiki page we find that he has a brother.
+![jim family](/jim_family.png)
+
+Looks like his brother's middle name is **Samuel**
+Inputting that into the Forgot Password page allows you to successfully change his password.
+You can change it to anything you want!
+
+Password successfully changed
+![jims password change](/password_change.png)
