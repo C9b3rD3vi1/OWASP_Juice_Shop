@@ -174,7 +174,7 @@ You can change it to anything you want!
 
 Password successfully changed
 
-![jims password change](/Password_ changed.png)
+![jims password change](/Password_changed.png)
 
 ***flag:***
 
