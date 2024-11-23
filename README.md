@@ -238,3 +238,31 @@ A Poison Null Byte is actually a NULL terminator. By placing a NULL character in
     bfc1e6b4a16579e85e06fee4c36ff8c02fb13795
 
 ## Who's flying this thing?
+
+![Who's flying this thing](/profile_edit.png)
+
+Modern-day systems will allow for multiple users to have access to different pages. Administrators most commonly use an administration page to edit, add and remove different elements of a website. You might use these when you are building a website with programs such as Weebly or Wix.
+
+***Horizontal Privilege Escalation***
+
+Occurs when a user can perform an action or access data of another user with the same level of permissions.
+
+***Vertical Privilege Escalation***
+
+Occurs when a user can perform an action or access data of another user with a higher level of permissions.
+
+![Broken Access](/broken_access.png)
+
+***Question #1: Access the administration page!***
+
+First, we are going to open the Debugger on Firefox.
+
+(Or Sources on Chrome.)
+
+This can be done by navigating to it in the Web Developers menu.
+
+![web inspector](/web_inspector.png)
+
+We are then going to refresh the page and look for a javascript file for main-es2015.js
+
+We will then go to that page at: http://MACHINE_IP/main-es2015.js
