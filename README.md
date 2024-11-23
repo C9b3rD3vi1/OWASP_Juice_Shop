@@ -169,6 +169,7 @@ Looking through the wiki page we find that he has a brother.
 ![jim family](/jim_family.png)
 
 Looks like his brother's middle name is **Samuel**
+
 Inputting that into the Forgot Password page allows you to successfully change his password.
 You can change it to anything you want!
 
@@ -204,8 +205,10 @@ After downloading it, navigate to the home page to receive the flag!
 
         edf9281222395a1c5fee9b89e32175f1ccf50c5b
 
+
 ***Question #2: Log into MC SafeSearch's account!***
 
+***Click these image below for video recording***
 [![Rapper who is very concerned about password search](/interceptor_burp.png)](https://youtu.be/v59CX2DiX0Y)
 
 After watching the video there are certain parts of the song that stand out.
