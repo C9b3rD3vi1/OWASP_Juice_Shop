@@ -74,15 +74,15 @@ If we google "replicator" we will get the results indicating that it is from a T
 
 This task will be focusing on injection vulnerabilities. Injection vulnerabilities are quite dangerous to a company as they can potentially cause downtime and/or loss of data. Identifying injection points within a web application is usually quite simple, as most of them will return an error. There are many types of injection attacks, some of them are:
 
-**SQL Injection**
+***SQL Injection***
 
 SQL Injection is when an attacker enters a malicious or malformed query to either retrieve or tamper data from a database. And in some cases, log into accounts.
 
-**Command Injection**
+***Command Injection***
 
 Command Injection is when web applications take input or user-controlled data and run them as system commands. An attacker may tamper with this data to execute their own system commands. This can be seen in applications that perform misconfigured ping tests.
 
-**Email Injection**
+***Email Injection***
 
 Email injection is a security vulnerability that allows malicious users to send email messages without prior authorization by the email server. These occur when the attacker adds extra data to fields, which are not interpreted by the server correctly.
 
@@ -174,3 +174,62 @@ You can change it to anything you want!
 
 Password successfully changed
 ![jims password change](/password_change.png)
+
+***flag:***
+
+    094fbc9b48e525150ba97d05b942bbf114987257
+
+## AH! Don't look!
+
+![Dont Look](/Dont_look.png)
+
+A web application should store and transmit sensitive data safely and securely. But in some cases, the developer may not correctly protect their sensitive data, making it vulnerable.
+
+Most of the time, data protection is not applied consistently across the web application making certain pages accessible to the public. Other times information is leaked to the public without the knowledge of the developer, making the web application vulnerable to an attack.
+
+***Question #1: Access the Confidential Document!***
+
+![Boring Staffs](/boring_staffs.png)
+
+Navigate to the About Us page, and hover over the "Check out our terms of use".
+
+![ftp path on About Us](/legal_md.png)
+
+![Visit ftp path](/ftp.png)
+
+We will download the acquisitions.md and save it. It looks like there are other files of interest here as well.
+
+After downloading it, navigate to the home page to receive the flag!
+
+        edf9281222395a1c5fee9b89e32175f1ccf50c5b
+
+***Question #2: Log into MC SafeSearch's account!***
+
+![Rapper who is very concerned about password search](https://youtu.be/v59CX2DiX0Y)
+
+After watching the video there are certain parts of the song that stand out.
+
+He notes that his password is "Mr. Noodles" but he has replaced some "vowels into zeros", meaning that he just replaced the o's into 0's.
+
+We now know the password to the mc.safesearch@juice-sh.op account is "Mr. N00dles"
+
+    66bdcffad9e698fd534003fbb3cc7e2b7b55d7f0
+
+***Question #3: Download the Backup file!***
+
+We will now go back to the  http://MACHINE_IP/ftp/ folder and try to download package.json.bak. But it seems we are met with a 403 which says that only .md and .pdf files can be downloaded.
+
+![package.json.bak](/express.png)
+
+To get around this, we will use a character bypass called ***Poison Null Byte***. A Poison Null Byte looks like this: **%00**. 
+
+Note: as we can download it using the url, we will need to encode this into a url encoded format.
+
+The Poison Null Byte will now look like this: **%2500**. Adding this and then a .md to the end will bypass the **403** error!
+
+![Null Byte Poisoning](/Null_Byte_Poison.png)
+
+A Poison Null Byte is actually a NULL terminator. By placing a NULL character in the string at a certain byte, the string will tell the server to terminate at that point, nulling the rest of the string.
+
+    bfc1e6b4a16579e85e06fee4c36ff8c02fb13795
+
