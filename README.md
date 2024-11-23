@@ -153,3 +153,7 @@ A failed request will receive a ***401*** Unauthorized
 Whereas a successful request will return a 200 OK
 
 ![Burp intruder](/intruder.png)
+
+Once completed, login to the account with the password.
+
+    c2110d06dc6f81c67cd8099ff0ba601241f1ac0e
