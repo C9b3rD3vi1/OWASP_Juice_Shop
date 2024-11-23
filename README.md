@@ -144,6 +144,12 @@ Forgotten password pages
 
 We have used SQL Injection to log into the Administrator account but we still don't know the password. Let's try a brute-force attack! We will once again capture a login request, but instead of sending it through the proxy, we will send it to Intruder.
 
-Go to Positions and then select the ***Clear §*** button. In the password field place two § inside the quotes. To clarify, the § § is not two sperate inputs but rather Burp's implementation of quotations e.g. "". The request should look like the image below.
-![Burp interception](/interceptor_burp.png)
+Go to Positions and then select the ***Clear §*** button. In the password field place two ***§*** inside the quotes. To clarify, the ***§ §*** is not two sperate inputs but rather Burp's implementation of quotations e.g. "". The request should look like the image below.
+
+***![Burp interception](/interceptor_burp.png)***
+
+A failed request will receive a ***401*** Unauthorized
+
+Whereas a successful request will return a 200 OK
+
 ![Burp intruder](/intruder.png)
