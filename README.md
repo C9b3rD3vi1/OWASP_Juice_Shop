@@ -211,7 +211,7 @@ After watching the video there are certain parts of the song that stand out.
 
 He notes that his password is "Mr. Noodles" but he has replaced some "vowels into zeros", meaning that he just replaced the o's into 0's.
 
-We now know the password to the mc.safesearch@juice-sh.op account is "Mr. N00dles"
+We now know the password to the ***mc.safesearch@juice-sh.op*** account is "***Mr. N00dles***"
 
     66bdcffad9e698fd534003fbb3cc7e2b7b55d7f0
 
