@@ -205,7 +205,7 @@ After downloading it, navigate to the home page to receive the flag!
 
 ***Question #2: Log into MC SafeSearch's account!***
 
-![Rapper who is very concerned about password search](https://youtu.be/v59CX2DiX0Y)
+[![Rapper who is very concerned about password search](/interceptor_burp.png)](https://youtu.be/v59CX2DiX0Y)
 
 After watching the video there are certain parts of the song that stand out.
 
@@ -221,7 +221,7 @@ We will now go back to the  http://MACHINE_IP/ftp/ folder and try to download pa
 
 ![package.json.bak](/express.png)
 
-To get around this, we will use a character bypass called ***Poison Null Byte***. A Poison Null Byte looks like this: **%00**. 
+To get around this, we will use a character bypass called ***Poison Null Byte***. A Poison Null Byte looks like this: **%00**.
 
 Note: as we can download it using the url, we will need to encode this into a url encoded format.
 
@@ -233,3 +233,4 @@ A Poison Null Byte is actually a NULL terminator. By placing a NULL character in
 
     bfc1e6b4a16579e85e06fee4c36ff8c02fb13795
 
+## Who's flying this thing?
