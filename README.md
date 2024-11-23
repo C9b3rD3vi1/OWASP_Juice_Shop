@@ -173,7 +173,7 @@ Inputting that into the Forgot Password page allows you to successfully change h
 You can change it to anything you want!
 
 Password successfully changed
-![jims password change](/password_change.png)
+![jims password change](/Password_change.png)
 
 ***flag:***
 
