@@ -313,3 +313,19 @@ Navigate to the  ***http://MACHINE_IP/#/administration*** page again and click t
 ## Where did that come from?
 
 ![Where did that come from?](/where.png)
+
+**XSS** or **Cross-site scripting** is a vulnerability that allows attackers to run javascript in web applications. These are one of the most found bugs in web applications. Their complexity ranges from easy to extremely hard, as each web application parses the queries in a different way.
+
+There are three major types of XSS attacks:
+
+### DOM (Special)
+
+***DOM XSS*** **(Document Object Model-based Cross-site Scripting)** uses the HTML environment to execute malicious javascript. This type of attack commonly uses the <script></script> HTML tag.
+
+### Persistent (Server-side)
+
+Persistent XSS is javascript that is run when the server loads the page containing it. These can occur when the server does not sanitise the user data when it is uploaded to a page. These are commonly found on blog posts.
+
+### Reflected (Client-side)
+
+Reflected XSS is javascript that is run on the client-side end of the web application. These are most commonly found when the server doesn't sanitise search data. XSS or Cross-site scripting is a vulnerability that allows attackers to run javascript in web applications. These are one of the most found bugs in web applications. Their complexity ranges from easy to extremely hard, as each web application parses the queries in a different way.
