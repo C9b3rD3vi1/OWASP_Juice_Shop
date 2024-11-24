@@ -348,6 +348,38 @@ This type of XSS is also called XFS (Cross-Frame Scripting), is one of the most 
 
 Websites that allow the user to modify the iframe or other DOM elements will most likely be vulnerable to XSS.
 
-Why does this work?
+**Why does this work?**
 
 It is common practice that the search bar will send a request to the server in which it will then send back the related information, but this is where the flaw lies. Without correct input sanitation, we are able to perform an XSS attack against the search bar.
+
+    9aaf4bbea5c30d00a1f5bbcfce4db6d4b0efe0bf
+
+***Question #2: Perform a persistent XSS!***
+
+First, login to the admin account.
+
+We are going to navigate to the "Last Login IP" page for this attack.
+
+![persistent XSS](ip_admin.png)
+
+It should say the last IP Address is 0.0.0.0 or 10.x.x.x
+
+As it logs the 'last' login IP we will now logout so that it logs the 'new' IP.
+
+Make sure that Burp intercept is on, so it will catch the logout request.
+
+We will then head over to the Headers tab where we will add a new header:
+
+![persistent](/persistent.png)
+
+Then forward the request to the server!
+When signing back into the admin account and navigating to the Last Login IP page again, we will see the XSS alert!
+
+![alert](/xss_alert.png)
+
+***Why do we have to send this Header?***
+
+The **True-Client-IP**  header is similar to the **X-Forwarded-For header**, both tell the server or proxy what the IP of the client is. Due to there being no sanitation in the header we are able to perform an XSS attack.
+
+    149aa8ce13d7a4a8a931472308e269c94dc5f156
+
