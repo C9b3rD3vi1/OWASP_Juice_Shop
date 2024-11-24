@@ -298,7 +298,7 @@ Now, we are going to change the number 1 after /basket/ to 2
 
 It will now show you the basket of UserID 2. You can do this for other UserIDs as well, provided that they have one!
 
-![UserID 2 Basket](//user_2_basket.png)
+![UserID 2 Basket](/user_2_basket.png)
 
     41b997a36cc33fbe4f0ba018474e19ae5ce52121
 
@@ -348,7 +348,7 @@ This type of XSS is also called XFS (Cross-Frame Scripting), is one of the most 
 
 Websites that allow the user to modify the iframe or other DOM elements will most likely be vulnerable to XSS.
 
-**Why does this work?**
+***Why does this work?***
 
 It is common practice that the search bar will send a request to the server in which it will then send back the related information, but this is where the flaw lies. Without correct input sanitation, we are able to perform an XSS attack against the search bar.
 
@@ -413,4 +413,6 @@ If you wish to tackle some of the harder challenges that were not covered within
 
     7efd3174f9dd5baa03a7882027f2824d2f72d86e
 
+
+**NOTE**
 ***This room has significantly boosted my confidence in identifying and mitigating vulnerabilities. I now feel better equipped to approach web application penetration testing and have a stronger appreciation for the intricacies of application security. It's a must-try for anyone looking to step into the world of web app security or enhance their penetration testing expertise.***
