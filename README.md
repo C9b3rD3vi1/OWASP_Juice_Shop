@@ -383,3 +383,25 @@ The **True-Client-IP**  header is similar to the **X-Forwarded-For header**, bot
 
     149aa8ce13d7a4a8a931472308e269c94dc5f156
 
+***Question #3: Perform a reflected XSS!***
+
+First, we are going to need to be on the right page to perform the **reflected XSS!**
+
+Login into the **admin account** and navigate to the '**Order History**' page.
+
+From there you will see a "Truck" icon, clicking on that will bring you to the track result page. You will also see that there is an id paired with the order.
+
+![stored xss attacks](/stored_xss.png)
+
+We will use the iframe XSS, <iframe src="javascript:alert(`xss`)">, in the place of the 5267-f73dcd000abcc353
+
+After submitting the URL, refresh the page and you will then get an alert saying XSS!
+
+![stored XSS](/xss_alert.png)
+
+**Why does this work?**
+
+The server will have a lookup table or database (depending on the type of server) for each tracking ID. As the 'id' parameter is not sanitised before it is sent to the server, we are able to perform an XSS attack.
+
+    23cefee1527bde039295b2616eeb29e1edc660a0
+
