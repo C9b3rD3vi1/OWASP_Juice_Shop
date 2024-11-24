@@ -309,3 +309,7 @@ Navigate to the  ***http://MACHINE_IP/#/administration*** page again and click t
 ![Five star review Deletion](/5_Star_reviews.png)
 
     50c97bcce0b895e446d61c83a21df371ac2266ef
+
+## Where did that come from?
+
+![Where did that come from?](/where.png)
