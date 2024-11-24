@@ -331,3 +331,23 @@ Persistent XSS is javascript that is run when the server loads the page containi
 Reflected XSS is javascript that is run on the client-side end of the web application. These are most commonly found when the server doesn't sanitise search data. XSS or Cross-site scripting is a vulnerability that allows attackers to run javascript in web applications. These are one of the most found bugs in web applications. Their complexity ranges from easy to extremely hard, as each web application parses the queries in a different way.
 
 ***Question #1: Perform a DOM XSS!***
+
+![XSS](/xss.png)
+
+We will be using the iframe element with a javascript alert tag:
+
+    <iframe src="javascript:alert(`xss`)"> 
+
+Inputting this into the search bar will trigger the alert.
+
+![XSS Alert](/xss_alert.png)
+
+Note that we are using iframe which is a common HTML element found in many web applications, there are others which also produce the same result.
+
+This type of XSS is also called XFS (Cross-Frame Scripting), is one of the most common forms of detecting XSS within web applications.
+
+Websites that allow the user to modify the iframe or other DOM elements will most likely be vulnerable to XSS.
+
+Why does this work?
+
+It is common practice that the search bar will send a request to the server in which it will then send back the related information, but this is where the flaw lies. Without correct input sanitation, we are able to perform an XSS attack against the search bar.
