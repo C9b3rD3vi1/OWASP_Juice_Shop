@@ -405,3 +405,12 @@ The server will have a lookup table or database (depending on the type of server
 
     23cefee1527bde039295b2616eeb29e1edc660a0
 
+## Exploration!
+
+![score board](/score_board.png)
+
+If you wish to tackle some of the harder challenges that were not covered within this room, check out the /#/score-board/ section on Juice-shop. Here you can see your completed tasks as well as other tasks in varying difficulty.
+
+    7efd3174f9dd5baa03a7882027f2824d2f72d86e
+
+***This room has significantly boosted my confidence in identifying and mitigating vulnerabilities. I now feel better equipped to approach web application penetration testing and have a stronger appreciation for the intricacies of application security. It's a must-try for anyone looking to step into the world of web app security or enhance their penetration testing expertise.***
