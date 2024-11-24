@@ -265,4 +265,47 @@ This can be done by navigating to it in the Web Developers menu.
 
 We are then going to refresh the page and look for a javascript file for main-es2015.js
 
-We will then go to that page at: http://MACHINE_IP/main-es2015.js
+We will then go to that page at: ***http://MACHINE_IP/main-es2015.js***
+
+
+To get this into a format we can read, click the ***{ }*** button at the bottom  
+
+Now search for the term "admin"
+
+You will come across a couple of different words containing "admin" but the one we are looking for is "path: administration"
+
+![Administrators page](/administrator.png)
+
+To get this into a format we can read, click the { } button at the bottom  
+
+Now search for the term "admin"
+
+You will come across a couple of different words containing "admin" but the one we are looking for is "path: administration"
+
+    946a799363226a24822008503f5d1324536629a0
+
+***Question #2: View another user's shopping basket!***
+
+Login to the Admin account and click on '**Your Basket**'. Make sure **Burp** is running so you can capture the request!
+
+Forward each request until you see: ***GET /rest/basket/1 HTTP/1.1***
+
+![Burp Basket Intercept Request](/backet.png)
+
+Now, we are going to change the number 1 after /basket/ to 2
+
+![Basket request change](/request_change.png)
+
+It will now show you the basket of UserID 2. You can do this for other UserIDs as well, provided that they have one!
+
+![UserID 2 Basket](//user_2_basket.png)
+
+    41b997a36cc33fbe4f0ba018474e19ae5ce52121
+
+Question #3: Remove all 5-star reviews!
+
+Navigate to the  ***http://MACHINE_IP/#/administration*** page again and click the bin icon next to the review with 5 stars!
+
+![Five star review Deletion](/5_Star_reviews.png)
+
+    50c97bcce0b895e446d61c83a21df371ac2266ef
