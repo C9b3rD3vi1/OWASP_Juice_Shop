@@ -414,5 +414,6 @@ If you wish to tackle some of the harder challenges that were not covered within
     7efd3174f9dd5baa03a7882027f2824d2f72d86e
 
 
-**NOTE**
+***NOTE***
+
 ***This room has significantly boosted my confidence in identifying and mitigating vulnerabilities. I now feel better equipped to approach web application penetration testing and have a stronger appreciation for the intricacies of application security. It's a must-try for anyone looking to step into the world of web app security or enhance their penetration testing expertise.***
