@@ -329,3 +329,5 @@ Persistent XSS is javascript that is run when the server loads the page containi
 ### Reflected (Client-side)
 
 Reflected XSS is javascript that is run on the client-side end of the web application. These are most commonly found when the server doesn't sanitise search data. XSS or Cross-site scripting is a vulnerability that allows attackers to run javascript in web applications. These are one of the most found bugs in web applications. Their complexity ranges from easy to extremely hard, as each web application parses the queries in a different way.
+
+***Question #1: Perform a DOM XSS!***
